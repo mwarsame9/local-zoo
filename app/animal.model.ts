@@ -1,12 +1,12 @@
 export class Animal {
 
-  constructor(public Species: string,
-              public Name: string,
-              public Age: number,
-              public Diet: string,
-              public Location: string,
-              public Caretakers: number,
-              public Sex: string,
-              public Likes: string,
-              public Dislikes: string) { }
+  constructor(public species: string,
+              public name: string,
+              public age: number,
+              public diet: string,
+              public location: string,
+              public caretakers: number,
+              public sex: string,
+              public likes: string,
+              public dislikes: string) { }
 }
