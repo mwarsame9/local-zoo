@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { Animal } from './animal.model';
 
 
-@Component({ 
+@Component({
   selector: 'app-root',
   template: `
   <div class="container">
@@ -11,6 +11,8 @@ import { Animal } from './animal.model';
 
 
   </div>
+  <hr>
+  <animal-detail [childSelectedAnimalDetail]="selectedAnimalDetail" (hideButtonClickedSender)="hideAnimal()"></animal-detail>
 
   <hr>
   <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()" ></edit-animal>
@@ -27,6 +29,16 @@ export class AppComponent {
 ];
 selectedAnimal: null;
   // used to be "selectedAnimalDetail: null;" but this caused build errors
+
+  selectedAnimalDetail: Animal;
+
+  showAnimal(clickedAnimalDetail) {
+    this.selectedAnimalDetail = clickedAnimalDetail;
+  }
+
+  hideAnimal() {
+    this.selectedAnimalDetail = null;
+  }
 
   editAnimal(clickedAnimal) {
     this.selectedAnimal = clickedAnimal;
