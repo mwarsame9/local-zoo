@@ -8,6 +8,7 @@ import { AnimalListComponent }  from './animal-list.component';
 import { EditAnimalComponent }  from './edit-animal.component';
 import { AnimalDetailComponent }  from './animal-detail.component';
 import { NewAnimalComponent }  from './new-animal.component';
+import { MaturityPipe } from './maturity.pipe';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { NewAnimalComponent }  from './new-animal.component';
                   AnimalListComponent,
                   EditAnimalComponent,
                   AnimalDetailComponent,
-                  NewAnimalComponent ],
+                  NewAnimalComponent,
+                  MaturityPipe],
   bootstrap:    [ AppComponent ] // this is the root component and will be the first to show on the index page
 })
 
