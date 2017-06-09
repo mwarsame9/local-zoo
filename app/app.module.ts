@@ -7,6 +7,7 @@ import { FormsModule }  from '@angular/forms';
 import { AnimalListComponent }  from './animal-list.component';
 import { EditAnimalComponent }  from './edit-animal.component';
 import { AnimalDetailComponent }  from './animal-detail.component';
+import { NewAnimalComponent }  from './new-animal.component';
 
 
 @NgModule({
@@ -14,8 +15,9 @@ import { AnimalDetailComponent }  from './animal-detail.component';
              FormsModule ],
   declarations: [ AppComponent,  // declarations is an array of all components that will reside in this module.
                   AnimalListComponent,
-                EditAnimalComponent,
-              AnimalDetailComponent, ],
+                  EditAnimalComponent,
+                  AnimalDetailComponent,
+                  NewAnimalComponent ],
   bootstrap:    [ AppComponent ] // this is the root component and will be the first to show on the index page
 })
 
