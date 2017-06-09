@@ -1,0 +1,17 @@
+{
+  "name": "local-zoo",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Mohamed Warsame <mwarsame9@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/mwarsame9/local-zoo",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
