@@ -5,19 +5,19 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'animal-list',
   template: `
-
+<br><br>
   <select (change)="onChange($event.target.value)">
     <option value="allAnimals" selected="selected">All Animals</option>
     <option value="mature">Animals 2+</option>
     <option value="young">Animals less than 2</option>
   </select>
 
-<br>
+<br><br>
 
   <ul>
   <li *ngFor="let currentAnimal of childAnimalList | maturity:filterByMaturity" >{{currentAnimal.name}}
-  <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit Animal</button>
-  <button class="btn btn-default btn-sm" (click)="showDetailButtonHasBeenClicked(currentAnimal)">Details</button></li>
+  <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit</button>
+  <button (click)="showDetailButtonHasBeenClicked(currentAnimal)">Details</button></li>
   </ul>
 
   `

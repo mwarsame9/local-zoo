@@ -17,7 +17,7 @@ import { Animal } from './animal.model';
         <li> <b>Likes:</b>   {{childSelectedAnimalDetail.likes}} </li>
         <li> <b>Dislikes:</b>   {{childSelectedAnimalDetail.dislikes}} </li>
       </ul>
-      <button class="btn btn-default btn-sm" (click)="hideButtonClicked()">Hide Details</button>
+      <button (click)="hideButtonClicked()">Hide</button>
     </div>
   `
 })
