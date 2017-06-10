@@ -13,10 +13,10 @@ import { Animal } from './animal.model';
   </select>
 
 <br>
-<br>
 
   <ul>
-  <li *ngFor="let currentAnimal of childAnimalList | maturity:filterByMaturity" >{{currentAnimal.name}}<button (click)="editButtonHasBeenClicked(currentAnimal)">Edit Animal</button>
+  <li *ngFor="let currentAnimal of childAnimalList | maturity:filterByMaturity" >{{currentAnimal.name}}
+  <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit Animal</button>
   <button class="btn btn-default btn-sm" (click)="showDetailButtonHasBeenClicked(currentAnimal)">Details</button></li>
   </ul>
 

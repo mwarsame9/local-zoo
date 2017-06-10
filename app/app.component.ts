@@ -11,10 +11,9 @@ import { Animal } from './animal.model';
 
 
   </div>
-  <hr>
-  <animal-detail [childSelectedAnimalDetail]="selectedAnimalDetail" (hideButtonClickedSender)="hideAnimal()"></animal-detail>
+    <animal-detail [childSelectedAnimalDetail]="selectedAnimalDetail" (hideButtonClickedSender)="hideAnimal()"></animal-detail>
 
-  <hr>
+  
   <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()" ></edit-animal>
 
   <div class="col-sm-12">
